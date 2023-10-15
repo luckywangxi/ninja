@@ -172,10 +172,10 @@ impl ArkoseToken {
 
 async fn get_chat_from_bx(bx: &str) -> anyhow::Result<ArkoseToken> {
     get_from_bx_common(
-        "tcr9i.chat.openai.com",
+        "openai-api.arkoselabs.com",
         bx,
-        "35536E1E-65B4-4D96-9D97-6ADB7EFF8147",
-        "https://chat.openai.com",
+        "0655BC92-82E1-43D9-B32E-9DF9B01AF50C",
+        "https://platform.openai.com",
         "1.5.5",
     )
     .await
@@ -183,10 +183,10 @@ async fn get_chat_from_bx(bx: &str) -> anyhow::Result<ArkoseToken> {
 
 async fn get_auth0_from_bx(bx: &str) -> anyhow::Result<ArkoseToken> {
     get_from_bx_common(
-        "tcr9i.chat.openai.com",
+        "openai-api.arkoselabs.com",
         bx,
-        "0A1D34FC-659D-4E23-B17B-694DCFCF6A6C",
-        "https://auth0.openai.com",
+        "0655BC92-82E1-43D9-B32E-9DF9B01AF50C",
+        "https://platform.openai.com",
         "1.5.5",
     )
     .await
@@ -196,7 +196,7 @@ async fn get_platform_from_bx(bx: &str) -> anyhow::Result<ArkoseToken> {
     get_from_bx_common(
         "openai-api.arkoselabs.com",
         bx,
-        "23AAD243-4799-4A9E-B01D-1166C5DE02DF",
+        "0655BC92-82E1-43D9-B32E-9DF9B01AF50C",
         "https://platform.openai.com",
         "1.5.5",
     )
